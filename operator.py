@@ -50,7 +50,7 @@ print("str_x*2 : ", str_z)
 
 
 delayed_effect_skill_a = "" #snake case
-delayedEffectSkillA = #camelCase
+delayedEffectSkillA = ""#camelCase
 
 
 array_x = [12314, 12344]
@@ -83,4 +83,7 @@ print("3합6 : ", totalScore)
 
 #과학 영재반
 can_apply_for_the_gifted = reportCard["물리"] ==1 or reportCard["화학"] ==1 or reportCard["생명과학"] == 1
-print("영재반 지원가능여부 :", can_apply_for_the_gifted )
+print("영재반 지원가능여부 :", can_apply_for_the_gifted
+
+
+      
