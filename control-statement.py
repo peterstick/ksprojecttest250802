@@ -27,3 +27,13 @@ index =0
 while index < input_number:
     print(index)
     index += 1
+
+
+input_number = int(input("수줘"))
+index = 2
+
+while index <= input_number:
+    if index % 2 == 0:
+        print(index)
+    index = index + 2
+
