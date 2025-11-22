@@ -43,30 +43,40 @@ test = [
 
 
 student_answer=[3,3,2,4,5,3,1,2,3,4]
-math_answer=[1,3,2,4,5,3,1,2,3,4]
-
+correct_answer = {
+    'math': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    'korean': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    'english': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+}
 # for(student, correct) in zip(a, correct_answer):
 #     print(student , '/', correct)
 
-def get_score(student_answer, math_answer):
-    #학생 점수구하기 문항당10점
-
-
-    score=0
-
-    for i in range(len(student_answer)):
-        if student_answer[i] == math_answer[i]:
+def get_score(student_answer, correct_answer):
+    # 학생의 점수구하기 한 문항당 10점이라 가정.
+    score = 0
+    for (student, correct) in zip(student_answer, correct_answer):
+        if student == correct:
             score = score + 10
-
     return score
 
-score = get_score(student_answer, math_answer)
-print(score)
 
 
 for student in test:
-    score = get_score(student, correct_answer)
-    print(score)
+
+    print("학생", student['name'], "=====================")
+    #for 중첩
+    #student.keys(), 이름이거나 학번인경우 or 배열이 아닌경우 continue
+
+    math_score = get_score(student['math'], correct_answer['math'])
+    korean_score = get_score(student['korean'], correct_answer['korean'])
+    english_score = get_score(student['english'], correct_answer['english'])
+    science_score = get_score(student['science'], correct_answer['science'])
+
+    print("수학점수:", math_score)
+    print("국어점수:", korean_score)
+    print("영어점수:", english_score)
+    print("과학점수:", science_score)
 
 
 
