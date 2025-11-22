@@ -34,41 +34,41 @@
 #while index <= input_number:
  #   if index % 2 == 0:
 #        print(index)
-
-
-fibo1 = 1
-fibo2 = 1
-
-print(fibo1)
-print(fibo2)
-
-while fibo1 <= 100:
-    fibo1 = fibo1+fibo2
-    print(fibo1)
-    fibo2 = fibo1+fibo2
-    print(fibo2)
-
-
-###def 함수이름(인자)
-#인자=argument=parameter
-
-
-def print_fibonacchi():
-    input_number = int(input("Enter a number: "))
-    a= 1
-    b= 1
-    c=1
-
-    while c<=input_number:
-        print(c)
-        c= a+b
-        a=b
-        b=c
-
-def repeat_function():
-    i=1
-
-    while i<=5:
+#
+#
+# fibo1 = 1
+# fibo2 = 1
+#
+# print(fibo1)
+# print(fibo2)
+#
+# while fibo1 <= 100:
+#     fibo1 = fibo1+fibo2
+#     print(fibo1)
+#     fibo2 = fibo1+fibo2
+#     print(fibo2)
+#
+#
+# ###def 함수이름(인자)
+# #인자=argument=parameter
+#
+#
+# def print_fibonacchi():
+#     input_number = int(input("Enter a number: "))
+#     a= 1
+#     b= 1
+#     c=1
+#
+#     while c<=input_number:
+#         print(c)
+#         c= a+b
+#         a=b
+#         b=c
+#
+# def repeat_function():
+#     i=1
+#
+#     while i<=5:
 #
 # 단일책임원칙
 #
@@ -84,3 +84,16 @@ def repeat_function():
 # 1. 코드단위(함수, 객체)
 # 가급적 하나의 컨셉만 가지기
 # 2. 이름 명확하게 짓기(컨셉반영, 변수 함수 객체 )
+
+
+
+
+
+# arr= ['AA','BB','CC','DD']
+#
+# for i in arr:
+#     print(i)
+
+
+
+#
