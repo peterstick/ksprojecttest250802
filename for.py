@@ -12,9 +12,16 @@ correct_answer=[1,3,2,4,5,3,1,2,3,4]
 for(student, correct) in zip(a, correct_answer):
     print(student , '/', correct)
 
-score = 100
-for i in correct_answer:
-    if i not in a:
-        score = score - 10
+score=0
+
+for i in range(len(a)):
+    if a[i] == correct_answer[i]:
+        score = score + 10
 
 print(score)
+
+#나는버러지
+# score = 100
+# for i in correct_answer:
+#     if i not in a:
+#         score = score - 10
