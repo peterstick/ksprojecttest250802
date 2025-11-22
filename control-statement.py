@@ -48,3 +48,39 @@ while fibo1 <= 100:
     fibo2 = fibo1+fibo2
     print(fibo2)
 
+
+###def 함수이름(인자)
+#인자=argument=parameter
+
+
+def print_fibonacchi():
+    input_number = int(input("Enter a number: "))
+    a= 1
+    b= 1
+    c=1
+
+    while c<=input_number:
+        print(c)
+        c= a+b
+        a=b
+        b=c
+
+def repeat_function():
+    i=1
+
+    while i<=5:
+#
+# 단일책임원칙
+#
+# 객체기능
+# 1. 학교에서 공부하다
+# 2. 회사에서 일한다
+# 3. 집가서 설거지한다
+# 4. 학교에서 축구한다
+#
+# 확장성 부족
+
+
+# 1. 코드단위(함수, 객체)
+# 가급적 하나의 컨셉만 가지기
+# 2. 이름 명확하게 짓기(컨셉반영, 변수 함수 객체 )
