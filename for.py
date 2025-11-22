@@ -1,24 +1,79 @@
 #수학점수
-test=[{'answer': [1,3,2,4,5,3,1,2,3,4]},
- {'answer': [1,5,3,2,3,1,4,5,3,3]},
- {'answer': [1,2,3,4,5,4,3,2,1,2]},
- {'answer': [1,3,2,4,5,3,2,5,5,4]},
- {'answer': [1,3,2,3,4,2,5,1,2,2]},
- {'answer': [1,3,3,5,2,3,1,2,2,2]},]
+test = [
+    {
+        'name': 'aaa',
+        'number': 10101,
+        'math': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'korean': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'english': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    },
+    {
+        'name': 'bbb',
+        'number': 10102,
+        'math': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'korean': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'english': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    },
+    {
+        'name': 'ccc',
+        'number': 10103,
+        'math': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'korean': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'english': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    },    {
+        'name': 'ddd',
+        'number': 10104,
+        'math': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'korean': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'english': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    },
+    {
+        'name': 'eee',
+        'number': 10105,
+        'math': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'korean': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'english': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+        'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
+    }
+]
 
-a=[3,3,2,4,5,3,1,2,3,4]
-correct_answer=[1,3,2,4,5,3,1,2,3,4]
 
-for(student, correct) in zip(a, correct_answer):
-    print(student , '/', correct)
+student_answer=[3,3,2,4,5,3,1,2,3,4]
+math_answer=[1,3,2,4,5,3,1,2,3,4]
 
-score=0
+# for(student, correct) in zip(a, correct_answer):
+#     print(student , '/', correct)
 
-for i in range(len(a)):
-    if a[i] == correct_answer[i]:
-        score = score + 10
+def get_score(student_answer, math_answer):
+    #학생 점수구하기 문항당10점
 
+
+    score=0
+
+    for i in range(len(student_answer)):
+        if student_answer[i] == math_answer[i]:
+            score = score + 10
+
+    return score
+
+score = get_score(student_answer, math_answer)
 print(score)
+
+
+for student in test:
+    score = get_score(student, correct_answer)
+    print(score)
+
+
+
+
+
+
+
 
 #나는버러지
 # score = 100
