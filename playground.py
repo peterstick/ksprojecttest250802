@@ -16,13 +16,17 @@ import time
 # def example_function(input_arg:int)
 
 
-cAnswer = random.randrange(1, 100)
+cAnswer = random.randint(1, 100)
 count=1
 
 
-while True:
-    user_input = int(input("한번 답해보거라 인간 : "))
 
+while True:
+    try:
+        user_input = int(input("한번 답해보거라 인간 : "))
+    except ValueError:
+        print("숫자를달라고")
+        continue
 
     if user_input > cAnswer:
         print("down")
@@ -36,4 +40,3 @@ while True:
         print("정답이다 끄지라")
         count=0
         break
-
