@@ -1,5 +1,4 @@
 import random
-
 import time
 
 
@@ -16,24 +15,25 @@ import time
 #
 # def example_function(input_arg:int)
 
-def updown():
-    result = random.randrange(1,100)
 
-count =0
-
-
-correctanswer = updown()
+cAnswer = random.randrange(1, 100)
+count=1
 
 
 while True:
-    user_input = input("한번 답해보거라 인간 : ")
+    user_input = int(input("한번 답해보거라 인간 : "))
 
 
-    if user_input > correctanswer:
+    if user_input > cAnswer:
         print("down")
-    elif user_input < correctanswer:
+        count += 1
+    elif user_input < cAnswer:
         print("up")
-    elif user_input == correctanswer:
+        count += 1
+
+
+    if user_input == cAnswer:
         print("정답이다 끄지라")
+        count=0
         break
 
