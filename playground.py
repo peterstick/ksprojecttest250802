@@ -73,10 +73,22 @@ def quiz():
 
 def stop_watch():
     print("WELCOME TO UP STOPWATCH")
+    time.sleep(3)
+    input("7초를 맞추거라 닝겐 : ")
+    time1 = time.time()
+    time2 = time1+7
 
 
+def anthem():
+    print('''동해물과 백두산이 마르고 닳도록
 
+    하느님이 보우하사 우리나라 만세
 
+    무궁화 삼천리 화려 강산
+
+    대한 사람 대한으로 길이 보전하세
+    ''')
+    exit()
 
 while True:
     print('''
@@ -96,5 +108,7 @@ while True:
         quiz()
     elif user_input.lower() == "c":
         stop_watch()
+    elif user_input.lower() == "k":
+        anthem()
     elif user_input.lower() == "z":
         break
