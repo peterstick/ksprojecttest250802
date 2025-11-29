@@ -52,6 +52,20 @@ def updown():
 
 def quiz():
     print("WELCOME TO QUIZ!")
+    words = {'apple':1,'banana':2,'grape':3,'melon':4}
+    cAnswer = random.choice(list(words.keys()))
+
+
+    while True:
+        user_input=input("힌트따윈없는이불합리한퀴즈를때려맞추거라 : ")
+
+        if user_input != cAnswer:
+            print("오답이다 연금술사")
+
+        if user_input == cAnswer:
+            print("정답이다 연금술사")
+            break
+
 
 
 
@@ -59,6 +73,10 @@ def quiz():
 
 def stop_watch():
     print("WELCOME TO UP STOPWATCH")
+
+
+
+
 
 while True:
     print('''
