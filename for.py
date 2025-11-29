@@ -90,3 +90,9 @@ for student in test:
 # for i in correct_answer:
 #     if i not in a:
 #         score = score - 10
+
+for key in student.keys():
+    if key == 'name' or key =='number':
+        continue
+    score = get_score(student[key], correct_answer[key])
+    print(key, ": ",score)
