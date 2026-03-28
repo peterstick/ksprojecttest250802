@@ -112,3 +112,24 @@ while True:
         anthem()
     elif user_input.lower() == "z":
         break
+
+
+word_array = [
+    {'kr': '사과', 'en': 'apple'},
+    {'kr': '바나나', 'en': 'banana'},
+    {'kr': '포도', 'en': 'grape'},
+    {'kr': '멜론', 'en': 'melon'},
+    {'kr': '레몬', 'en': 'lemon'},
+    {'kr': '수박', 'en': 'watermelon'},
+    {'kr': '복숭아', 'en': 'peach'},
+    {'kr': '연필', 'en': 'pencil'},
+]
+
+
+
+def wannagohome():
+    des = input("살려줘")
+    print("웃기고있네")
+
+
+
